@@ -1,0 +1,55 @@
+@use './colors.scss' as *;
+@use './variables.scss' as *;
+
+body {
+    width: 100%;
+    background-color: $background;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    // padding: 0 2rem 2rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    display: flex;
+    padding-top: 6px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-image: linear-gradient(to right, $background, $indigo, $background) 1;
+    border-bottom: 0.1ch solid $light-purple;
+    border-width: 1px;
+    background-color: $background;
+    z-index: 1;
+
+    p {
+        color: white;
+        padding-left: 5rem;
+        font-size: 24px;
+        line-height: 0%;
+        font-weight: 900;
+    }
+
+    ul {
+        display: flex;
+        padding-right: 4rem;
+    }
+
+    li {
+        color: $text-color;
+        width: 120px;
+        list-style: none;
+        font-size: large;
+    }
+}
+
+@media (max-width: $medium-screen) {
+    nav {
+        ul {
+            display: none;
+        }
+    }
+
+}

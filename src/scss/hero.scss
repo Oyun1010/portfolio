@@ -1,0 +1,109 @@
+@use './colors.scss' as *;
+@use './variables.scss' as *;
+
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: $medium-screen) {
+    section {
+        flex-direction: column;
+        background-color: pink;
+    }
+
+}
+
+.hero {
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+
+    .intro {
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-top: 15em;
+        margin-right: 5rem;
+        line-height: 0%;
+
+        h1 {
+            width: max-content;
+            font-size: 3em;
+            height: max-content;
+            color: $title-color;
+            font-family: $font-style;
+        }
+
+        h3 {
+            width: 30vw;
+            background-color: aliceblue;
+            color: white;
+            text-align: center;
+            font-size: large;
+            opacity: 0.5;
+            font-family: $subtitle-font;
+        }
+
+        .icon {
+            width: 30vw;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+
+            p {
+                color: $text-color;
+                font-family: $subtitle-font;
+                font-size: 20px;
+                padding: 20px;
+                background-color: #52325c2c;
+                border-radius: 2rem;
+            }
+
+            // img:first-child {
+            //     flex-shrink: 0;
+            //     width: 50px;
+            //     height: 50px;
+            // }
+
+            // img {
+                
+            //     width: 65px;
+            //     height: 65px;
+            // }
+
+
+        }
+
+    }
+
+    .img {
+        width: 650px;
+        height: 650px;
+        object-fit: cover;
+        clip: auto;
+
+    }
+
+
+
+    @media (max-width: $medium-screen ) {
+        .img {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+}
