@@ -15,17 +15,17 @@
         <div class="skills">
             <div class="skill-item">
                 <h2>Frontend</h2>
-                <SkillItem name="React Js" icon_src='../src/assets/icons/react-native.png' percent="90%" />
-                <SkillItem name="React Native" icon_src='../src/assets/icons/react-native.png' percent="100%" />
-                <SkillItem name="Next Js" icon_src='../src/assets/icons/react-native.png' percent="90%" />
-                <SkillItem name="Flutter" icon_src='../src/assets/icons/react-native.png' percent="100%" />
-                <SkillItem name="Vue Js" icon_src='../src/assets/icons/react-native.png' percent="90%" />
+                <SkillItem name="React Js" icon_src='../src/assets/icons/react-native.png' percent="--i:85%" />
+                <SkillItem name="React Native" icon_src='../src/assets/icons/react-native.png' percent="--i:85%" />
+                <SkillItem name="Next Js" icon_src='../src/assets/icons/react-native.png' percent="--i:90%" />
+                <SkillItem name="Flutter" icon_src='../src/assets/icons/react-native.png' percent="--i:90%" />
+                <SkillItem name="Vue Js" icon_src='../src/assets/icons/react-native.png' percent="--i:30%" />
             </div>
             <div class="skill-item">
                 <h2>Backend</h2>
-                <SkillItem name="Node Js" icon_src='../src/assets/icons/react-native.png' percent="90%" />
-                <SkillItem name="Express Js" icon_src='../src/assets/icons/express.png' percent="100%" />
-                <SkillItem name="Mongodb" icon_src='../src/assets/icons/react-native.png' percent="90%" />
+                <SkillItem name="Node Js" icon_src='../src/assets/icons/react-native.png' percent="--i:80%" />
+                <SkillItem name="Express Js" icon_src='../src/assets/icons/express.png' percent="--i:80%" />
+                <SkillItem name="Mongodb" icon_src='../src/assets/icons/react-native.png' percent="--i:80%" />
             </div>
             <div class="skill-item">
                 <h2>Designer</h2>
@@ -36,14 +36,21 @@
         </div>
 
         <div class="soft-skills">
-            <div>
-                <SoftSkillItem title="Time management" img_scr="../src/assets/time-management.png" />
-                <SoftSkillItem title="Problem solving" img_scr="../src/assets/time-management.png" />
-                <SoftSkillItem title="Team work" img_scr="../src/assets/time-management.png" />
-                <SoftSkillItem title="Communication" img_scr="../src/assets/time-management.png" />
+
+            <div class="skill-items">
+                <SoftSkillItem ind="--i:1" title="Time management" img_scr="../src/assets/time-management.png" />
+                <SoftSkillItem ind="--i:2" title="Problem solving" img_scr="../src/assets/bouncy-searching-for-mental-problems-in-the-brain.png" />
+                <SoftSkillItem ind="--i:3" title="Team work" img_scr="../src/assets/bonbon-robot-helps-with-business-processes-by-moving-gears.png" />
+                <SoftSkillItem ind="--i:4" title="Communication" img_scr="../src/assets/worky-receiving-a-message-on-a-smartphone.png" />
+                <SoftSkillItem ind="--i:5" title="Adaptability" img_scr="../src/assets/juicy-globe-earth.png" />
+                <SoftSkillItem ind="--i:6" title="Resilience" img_scr="../src/assets/moji-crossed-fingers.png" />
             </div>
 
-            <h3>Soft Skills</h3>
+
+
+
+
+            <h2>Soft Skills</h2>
 
         </div>
 
@@ -63,8 +70,9 @@ export default {
     components: {
         SkillItem,
         SoftSkillItem
-    }
+    },
 
 }
+
 </script>
 

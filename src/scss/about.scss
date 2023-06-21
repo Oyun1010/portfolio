@@ -9,7 +9,7 @@
 }
 
 .about-section {
-    width: 70%;
+    width: 80%;
     height: fit-content;
     background-color: #75007507;
     margin: auto;
@@ -61,7 +61,7 @@
         color: white;
         opacity: 0.8;
         line-height: 1.7rem;
-        font-size: 18px;
+        font-size: 1.4vw;
         text-align: justify;
     }
 
@@ -79,5 +79,38 @@
             gap: 2px;
         }
     }
+
+}
+
+@media (min-width: $large-screen) {
+    .about-section {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: $medium-screen) {
+    .about-section {
+        width: 90%;
+        img {
+            width: 25vw;
+        }
+    }
+    .section-1 {
+        width: 30vw;
+        min-width: 28vw;
+    }
+
+    .desc {
+        p {
+            padding: 8px 8px 8px 0;
+            color: white;
+            opacity: 0.8;
+            line-height: 1.7rem;
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+
 
 }

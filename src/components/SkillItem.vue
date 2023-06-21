@@ -3,9 +3,10 @@
         <img :src=icon_src alt="icon" width="50" height="50" />
         <div>
             <h3>{{ name }}</h3>
-            <div class="line">
-                <p>{{ percent }}</p>
-            </div>
+            <hr class="line">
+            <div class="percent" :style=percent></div>
+           
+
         </div>
 
     </span>
@@ -18,7 +19,8 @@ export default {
     props: {
         name: String,
         icon_src: String,
-        percent: Number,
+        percent: String,
+
     }
 }
 </script>

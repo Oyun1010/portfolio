@@ -11,8 +11,8 @@ import '../scss/hero.scss';
         <h1>Hi, I'm Oyunsuren</h1>
         <h3>Developer</h3>
         <span class="icon">
-          <p>Contact me</p>
-          <a href="https://www.messenger.com/t/100008838469387" target="_blank">
+          <a href="#contact"><p>Contact me</p></a>
+          <!-- <a href="https://www.messenger.com/t/100008838469387" target="_blank">
             <img src="../assets/icons/messenger.png" width="50" height="50" alt="icon" />
           </a>
           <a href="#" target="_blank">
@@ -20,7 +20,7 @@ import '../scss/hero.scss';
           </a>
           <a href="#" target="_blank">
             <img src="../assets/icons/phone.png" width="50" height="45" alt="icon" />
-          </a>
+          </a> -->
         </span>
       </div>
 

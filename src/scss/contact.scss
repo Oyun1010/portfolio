@@ -1,0 +1,79 @@
+@use './colors.scss' as *;
+@use './variables.scss' as *;
+
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-left,
+    .img-right {
+        opacity: 0.2;
+    }
+
+    .img-right {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}
+
+.contact-section {
+    width: max-content;
+    height: 97vh;
+    margin-left: -8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin-left: -3em;
+        color: $text-color;
+        font-family: $subtitle-font;
+        font-size: 28px;
+    }
+
+    img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        margin-left: -7em;
+
+        img {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+
+        p {
+            color: $text-color;
+            padding-left: 12px;
+            line-height: 0;
+            font-size: 18px;
+        }
+    }
+}
+
+// @media (max-width: $medium-screen) {
+//     .contact-section {
+//         img {
+//             display: none;
+//         }
+
+//         .item {
+//             padding-left: 0%;
+
+//             img {
+//                 display: block;
+//             }
+//         }
+
+//     }
+
+// }

@@ -14,16 +14,12 @@ import '../scss/about.scss';
         <h3>My introduction</h3>
         <p>
           Энэ өдрийн мэндийн хүргэе. Намайг Оюунсүрэн гэдэг бөгөөд 2023 онд Монгол Улсын их сургуулийн Мэдээллийн
-          технологи хөтөлбөрөөр төгссөн. Цаашдаа fullstack хөгжүүлэгч болох зорилготой. Өөрийгөө frontend dddd backend
+          технологи хөтөлбөрөөр төгссөн. Цаашдаа fullstack хөгжүүлэгч болох зорилготой.
         </p>
         <h3>Education</h3>
         <div class="edu">
-          <p>Information Technology</p>
+          <p>Information Technology (2019-2023)</p>
           <p>National University of Mongolia</p>
-          <div class="time">
-            <img alt="img" src="../assets/icons/calendar.png" width="35" height="35" />
-            <p>2019 - 2023</p>
-          </div>
 
         </div>
       </div>
