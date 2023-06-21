@@ -1,7 +1,10 @@
 @use './colors.scss' as *;
 @use './variables.scss' as *;
 
-
+#skill {
+    height: max-content;
+    margin-bottom: 8rem;
+}
 .head {
     padding-top: 5rem;
     width: 100%;

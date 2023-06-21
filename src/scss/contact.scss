@@ -11,6 +11,7 @@
     .img-left,
     .img-right {
         opacity: 0.2;
+        width: 30vw;
     }
 
     .img-right {
@@ -60,20 +61,47 @@
     }
 }
 
-// @media (max-width: $medium-screen) {
-//     .contact-section {
-//         img {
-//             display: none;
-//         }
+@media (max-width: $medium-screen) {
+    #contact {
 
-//         .item {
-//             padding-left: 0%;
+        .img-left,
+        .img-right {
+            display: none;
+        }
+    }
 
-//             img {
-//                 display: block;
-//             }
-//         }
+    .contact-section {
+        .item {
+            padding-left: 0%;
 
-//     }
+            img {
+                display: block;
+            }
+        }
 
-// }
+    }
+
+}
+
+@media (max-width: $small-screen) {
+    #contact {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+
+        .item {
+            padding-left: 0%;
+
+            img {
+                display: block;
+            }
+        }
+
+    }
+
+}

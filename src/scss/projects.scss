@@ -1,0 +1,112 @@
+@use './colors.scss' as *;
+@use './variables.scss' as *;
+
+#projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        padding: 1.5rem;
+        color: $title-color;
+        font-family: $font-style;
+        font-size: 4vw;
+    }
+
+    .items {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .more {
+        width: 30%;
+        padding: 12px;
+        border: 1px solid rgba(128, 0, 128, 0.663);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-color;
+        font-size: 2vw;
+        border-radius: 24px;
+    }
+
+    .more:hover {
+        background-color: #ffffff24;
+    }
+
+    .pro-item {
+
+        padding: 12px;
+        width: 30%;
+        background-color: #ffffff10;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+        }
+
+        .frameworks {
+            width: 100%;
+            margin: 16px 0px 8px 0px;
+        }
+
+        .frameworks>* {
+            background-color: #ffffff24;
+
+            border: 1px solid #b330af19;
+            margin-right: 12px;
+            padding: 3px 12px 3px 12px;
+            border-radius: 1rem;
+            color: $text-color;
+        }
+
+
+
+        .domain {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+
+        }
+
+        .links {
+            width: 100%;
+            margin-top: 12px;
+            display: flex;
+            justify-content: end;
+
+            img {
+                width: 24px;
+            }
+
+            a {
+
+                margin-left: 12px;
+                padding: 3px 12px 3px 12px;
+                border-radius: 1.5rem;
+                border: 1px solid rgba(128, 0, 128, 0.663);
+            }
+
+            a:hover {
+                background-color: #ffffff10;
+
+            }
+        }
+
+        .links>* {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+    }
+}

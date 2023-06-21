@@ -8,7 +8,7 @@ import '../scss/about.scss';
       <div class="section-1">
         <h1>About Me</h1>
         <p>My introduction</p>
-        <img alt="img" src="../assets/logo.svg" width="250" height="250" />
+        <img alt="img" src="../assets/ani_1.gif" width="250" height="250" />
       </div>
       <div class="desc">
         <h3>My introduction</h3>
@@ -17,11 +17,9 @@ import '../scss/about.scss';
           технологи хөтөлбөрөөр төгссөн. Цаашдаа fullstack хөгжүүлэгч болох зорилготой.
         </p>
         <h3>Education</h3>
-        <div class="edu">
-          <p>Information Technology (2019-2023)</p>
-          <p>National University of Mongolia</p>
+        <p>2019-2023 <br /><span style="padding: 1.5rem;">National University of Mongolia - Information Technology</span></p>
 
-        </div>
+
       </div>
     </div>
   </section>

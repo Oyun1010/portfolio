@@ -12,7 +12,7 @@ export default {
 <template>
     <div class="item">
         <img :src=img_scr alt="image" width="50" height="50" />
-        <a :href=url>
+        <a :href=url target="_blank">
             <p>{{ title }}</p>
         </a>
     </div>

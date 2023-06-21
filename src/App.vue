@@ -5,6 +5,7 @@ import HomeView from './views/HomeView.vue';
 import AboutView from './views/AboutView.vue';
 import SkillsView from './views/SkillsView.vue';
 import ContactView from './views/ContactsView.vue';
+import ProjectsView from './views/ProjectsView.vue';
 import Footer from './components/Footer.vue';
 
 import './scss/styles.scss'
@@ -15,6 +16,7 @@ import './scss/styles.scss'
   <HomeView />
   <AboutView />
   <SkillsView />
+  <ProjectsView />
   <ContactView />
   <Footer />
 </template>
