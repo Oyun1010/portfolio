@@ -24,13 +24,13 @@ export default {
             <ProjectItem img_path="../src/assets/projects/pro_3.png" :libraries='["flutter", "firebase"]'
                 git_url="https://github.com/Oyun1010/mobile_project"
                 figma="https://www.figma.com/file/l0Yrg1P8DRjxPJ2kyyZmjV/%5BFREEBIES%5D-Income-%26-Expense-Tracker-(Community)?type=design&node-id=0-1&t=LwJeUW9z1t9FB6kS-0" />
-            <ProjectItem img_path="../src/assets/projects/pro_4.png"
+            <!-- <ProjectItem img_path="../src/assets/projects/pro_4.png"
                 :libraries='["react native", "native wind", "mongobd", "nodejs"]'
                 git_url="https://github.com/Oyun1010/rentalapp"
-                figma="https://www.figma.com/file/22bCs2Ja1WmxY9arRxrWEs/Untitled?type=design&node-id=0-1&mode=design&t=4pYSbYn6XPYo9mIo-0" />
+                figma="https://www.figma.com/file/22bCs2Ja1WmxY9arRxrWEs/Untitled?type=design&node-id=0-1&mode=design&t=4pYSbYn6XPYo9mIo-0" /> -->
 
             <div class="more">
-                <a href="https://github.com/Oyun1010">More >></a>
+                <a href="https://github.com/Oyun1010" target="_blanks">More >></a>
 
             </div>
         </div>
