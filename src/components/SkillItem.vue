@@ -5,7 +5,7 @@
             <h3>{{ name }}</h3>
             <hr class="line">
             <div class="percent" :style=percent></div>
-           
+          
 
         </div>
 

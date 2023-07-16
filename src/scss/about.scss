@@ -11,11 +11,13 @@
 .about-section {
     width: 80%;
     height: fit-content;
-    background-color: #75007507;
+    background-color: #ffffff15;
+
+    box-shadow: $shadow;
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin-bottom: 5rem;
     border-radius: 2rem;
 
@@ -44,47 +46,92 @@
 
 .desc {
     width: 60%;
-    height: 52vh;
-    margin-top: -20px;
+    height: max-content;
+    margin-top: 5px;
 
-    h3 {
-        line-height: 0;
-        color: aliceblue;
-        opacity: 0.5;
-        font-size: 24px;
-        font-family: $subtitle-font;
-        font-weight: 100;
-    }
 
-    p {
-        padding: 12px 32px 12px 0px;
-        color: white;
-        opacity: 0.8;
-        line-height: 1.7rem;
-        font-size: 1.4vw;
-        text-align: justify;
-    }
+    span {
+        display: flex;
+        margin: 25px 1rem 1rem 0;
 
-    .edu {
-        padding-top: 6px;
-
-        p {
-
-            padding: 0;
-            line-height: 12px;
+        p,
+        a {
+            margin: 0;
+            color: white;
+            font-size: 1.4vw;           
+            text-align: justify;
         }
 
-        .time {
-            display: flex;
-            gap: 2px;
+        p:first-child {
+            margin-right: 12px;
+            min-width: 165px;
+            height: fit-content;
+            width: max-content;
+            // background-color: palegreen;
+            border-radius: 1rem;
+            opacity: 0.4;
+            // padding-left: 12px;
+
         }
+
+        p:last-child {
+            padding: 0px 2rem 0px 1rem;
+        }
+
     }
+
+    .skill-pro {
+        display: flex;
+    }
+
+    .skill-pro>* {
+        width: max-content;
+        width: 12vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-color;
+
+        padding: 6px 0 6px 2rem;
+        background-color: #52325c2c;
+        border-radius: 2rem;
+        font-weight: lighter;
+
+    }
+
+    .skill-pro>*:hover {
+        border: 1px solid $indigo;
+        box-shadow: $shadow;
+    }
+
+
+
+    // .edu {
+    //     padding-top: 6px;
+
+    //     p {
+
+    //         padding: 0;
+    //         line-height: 12px;
+    //     }
+
+    //     .time {
+    //         display: flex;
+    //         gap: 2px;
+    //     }
+    // }
 
 }
 
 @media (min-width: $large-screen) {
     .about-section {
         width: 70%;
+
+
+        .desc {
+            font-size: 1.4vw;
+        }
+
     }
 
 }
@@ -92,25 +139,28 @@
 @media (max-width: $medium-screen) {
     .about-section {
         width: 90%;
+
         img {
             width: 25vw;
         }
     }
+
     .section-1 {
         width: 30vw;
         min-width: 28vw;
     }
 
     .desc {
-        p {
-            padding: 8px 8px 8px 0;
-            color: white;
-            opacity: 0.8;
-            line-height: 1.7rem;
-            font-size: 16px;
-            text-align: justify;
+        span {
+            p, a {
+                font-size: large;
+            }
+            p:first-child {
+                width: 70px;
+              
+            }
         }
+      
     }
-
 
 }

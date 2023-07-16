@@ -16,6 +16,7 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: 9999;
 }
 
 .outer {
@@ -51,7 +52,8 @@ nav {
     border-bottom: 0.1ch solid $light-purple;
     border-width: 1px;
     background-color: $background;
-    z-index: 1;
+    z-index: 2;
+    cursor: pointer;
 
 
     p {
@@ -85,14 +87,38 @@ nav {
 
     }
 
+    .menu-icon {
+        padding-right: 1.5rem;
+        display: none;
+    }
+
 
 }
 
+
+
 @media (max-width: $medium-screen) {
     nav {
-        ul {
+        p {
             display: none;
+            font-size: 4vw;
+            padding-left: 1rem;
         }
+        ul {
+            font-size: 2vw;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        li {
+            width: 12vw;
+            text-align: center;
+        }
+
+        // .menu-icon {
+        //     display: block;
+        // }
     }
 
 }
