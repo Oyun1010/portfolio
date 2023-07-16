@@ -9,6 +9,35 @@ body {
     // padding: 0 2rem 2rem;
 }
 
+.cursor {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.outer {
+    border: 1px solid $title-color;
+}
+
+.inner {
+    background: $title-color;
+    opacity: 0.2;
+    transition: 250ms ease-out;
+}
+
+.cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+}
+
+.inner.hover {
+    background: #f7f7f7;
+    mix-blend-mode: difference;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -23,7 +52,7 @@ nav {
     border-width: 1px;
     background-color: $background;
     z-index: 1;
-   
+
 
     p {
         color: white;
@@ -34,17 +63,29 @@ nav {
         font-family: $font-style;
     }
 
+
     ul {
         display: flex;
         padding-right: 4rem;
+        z-index: 9999;
     }
 
     li {
-        color: $text-color;
         width: 120px;
         list-style: none;
         font-size: large;
+        text-align: center;
+        padding: 5px;
+        z-index: 9999;
     }
+
+    li:hover>* {
+        color: $indigo;
+        font-weight: bold;
+
+    }
+
+
 }
 
 @media (max-width: $medium-screen) {

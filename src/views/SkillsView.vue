@@ -19,7 +19,7 @@
                 <SkillItem name="React Native" icon_src='../src/assets/icons/react-native.png' percent="--i:85%" />
                 <SkillItem name="Next Js" icon_src='../src/assets/icons/react-native.png' percent="--i:90%" />
                 <SkillItem name="Flutter" icon_src='../src/assets/icons/react-native.png' percent="--i:90%" />
-                <SkillItem name="Vue Js" icon_src='../src/assets/icons/react-native.png' percent="--i:30%" />
+                <SkillItem name="Vue Js" icon_src='../src/assets/icons/react-native.png' percent="--i:50%" />
             </div>
             <div class="skill-item">
                 <h2>Backend</h2>

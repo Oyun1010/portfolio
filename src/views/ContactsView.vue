@@ -12,7 +12,7 @@ export default {
 
 <template>
     <section id="contact">
-        <img class="img-left" alt="img" src="../assets/social.png" width="500" height="400" />
+        <img class="contact-bg" alt="img" src="../assets/2833951.jpg" width="500" height="400" />
         <div class="contact-section">
             <img alt="img" src="../assets/contact.gif" width="500" height="500" />
             <div>
@@ -26,6 +26,6 @@ export default {
 
             </div>
         </div>
-        <img class="img-right" alt="img" src="../assets/social.png" width="500" height="400" />
+        <!-- <img class="img-right" alt="img" src="../assets/social.png" width="500" height="400" /> -->
     </section>
 </template>
